@@ -2,7 +2,7 @@
 """
 Created on Thu Jun 25 15:35:40 2020
 
-@author: QGX
+@author: Aierlma
 """
 
 from aip import AipOcr
