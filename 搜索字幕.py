@@ -22,14 +22,14 @@ for i in files:
     
     fanhao = os.path.splitext(i)[0]
     print(fanhao)
-    c = 'https://www.dmmbus.cam/search/%s&type=&parent=ce'%fanhao
+    c = ''
     a = requests.get(c) 
     print(c)
     b = a.text
     print("包含字幕的磁力連結" in b)
     if "包含字幕的磁力連結" in b:
         count += 1
-        file1.write('https://www.dmmbus.cam/search/%s&type=&parent=ce'%fanhao + "\n")
+        file1.write('' + "\n")
         
 file1.close()        
 print(count)
